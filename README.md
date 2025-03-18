@@ -1,0 +1,2 @@
+# GitHired
+Candidate search application
