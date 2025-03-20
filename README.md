@@ -1,33 +1,92 @@
-# React + TypeScript + Vite
+# GitHired
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+GitHired is a **TypeScript-based Candidate Search Application** that integrates with the GitHub API to help recruiters find potential candidates based on their GitHub activity. The application stores selected candidates in local storage and is deployed on **Render**.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-* [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md), which uses [Babel](https://babeljs.io/) for Fast Refresh
-* [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc), which uses [SWC](https://swc.rs/) for Fast Refresh
+- 🔍 **Search for GitHub users** based on keywords and filter criteria
+- 📂 **View user profiles** including repositories, followers, and contributions
+- ⭐ **Save potential candidates** in local storage for future reference
+- 🌐 **Deployed on Render** for easy access
+- 🎨 **Built with TypeScript** for better code maintainability
 
-## Expanding the ESLint configuration
+## 🛠️ Technologies Used
 
-If you're developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- **Frontend**: TypeScript, React, Vite
+- **Backend**: Node.js, Express.js
+- **API**: GitHub REST API
+- **Storage**: Local Storage
+- **Deployment**: Render
 
-* Configure the top-level `parserOptions` property as follows:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+## 📂 Project Structure
+```
+GitHired/
+│── public/                 # Static assets
+│── src/
+│   ├── components/         # Reusable UI components
+│   ├── pages/              # Main application pages
+│   ├── services/           # API handling logic
+│   ├── hooks/              # Custom React hooks
+│   ├── utils/              # Utility functions
+│   ├── App.tsx             # Root component
+│── .gitignore
+│── package.json
+│── tsconfig.json
+│── vite.config.ts
+│── README.md
 ```
 
-* Replace `plugin:@typescript-eslint/recommended` with `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`.
-* Optionally, add `plugin:@typescript-eslint/stylistic-type-checked`.
-* Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` and `plugin:react/jsx-runtime` to the `extends` list.
+## 📦 Installation & Setup
+
+1. **Clone the repository:**
+   ```sh
+   git clone https://github.com/bans-07/GitHired.git
+   ```
+
+2. **Navigate to the project directory:**
+   ```sh
+   cd GitHired
+   ```
+
+3. **Install dependencies:**
+   ```sh
+   npm install
+   ```
+
+4. **Start the development server:**
+   ```sh
+   npm run dev
+   ```
+
+5. **Open in Browser:**
+   Visit `http://localhost:5173/` to see the application running.
+
+## 🔧 Configuration
+
+Create a `.env` file in the root directory and add your GitHub API token:
+```
+VITE_GITHUB_API_KEY=your_github_api_token
+```
+
+## 📌 Future Enhancements
+
+- 📊 **Advanced filtering** (e.g., programming languages, activity levels)
+- 📧 **Export saved candidates** to CSV or email
+- ⚡ **Improved UI/UX** with animations and better design
+- 🔄 **Backend database support** for persistent storage
+
+## 🤝 Contributing
+
+Contributions are welcome! To contribute:
+1. Fork the repository
+2. Create a new branch (`feature/new-feature`)
+3. Commit your changes (`git commit -m "Added a new feature"`)
+4. Push to the branch (`git push origin feature/new-feature`)
+5. Open a pull request
+
+## 📜 License
+This project is licensed under the MIT License.
 
 ---
-© 2024 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
+Made with ❤️ by [bans-07](https://github.com/bans-07)
+
